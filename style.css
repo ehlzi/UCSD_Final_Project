@@ -1,0 +1,109 @@
+.header {
+    background-color: black;
+    padding: 1% 1% 1% 1%;
+    width: 100%;
+}
+
+.nav {
+    background-color: aquamarine;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1% 0;
+}
+
+.header_image {
+    //background-color: red;
+    width: 10%;
+    text-align: center;
+}
+
+.nav_button {
+    background-color: grey;
+    width: 10%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order_banner {
+    background-color: darkgreen;
+    padding: 2%;
+}
+
+.banner_img {
+    width: 100%;
+    height: auto;
+}
+
+.rewards {
+    background-color: black;
+    padding: 1% 1% 1% 1%;
+    width: 100%;
+}
+
+.learn_more {
+    background-color: black;
+    padding: 1%;
+    width: 100%;
+}
+
+.learn_more_container {
+    background-color: aquamarine;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1%;
+}
+
+.learn_more_article {
+    background-color: red;
+    margin: 1%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.learn_more_image {
+    background-color: maroon;
+    padding: 2%;
+    width: 100%;
+    height: auto;
+}
+
+.our_menu_container {
+    background-color: black;
+    padding: 1%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.our_menu {
+    background-color: aquamarine;
+    width: 100%;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2%;
+}
+
+.menu_item_container {
+    background-color: grey;
+    margin-top: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+.menu_item {
+    background-color: maroon;
+    display: grid;
+}
+
+.menu_item_img {
+    width: 30%;
+    height: auto;
+}
