@@ -6,11 +6,10 @@
 
 .nav {
     background-color: aquamarine;
-    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1% 0;
+    padding: 1%;
 }
 
 .header_image {
@@ -40,7 +39,7 @@
 
 .rewards {
     background-color: black;
-    padding: 1% 1% 1% 1%;
+    padding: 1%;
     width: 100%;
 }
 
@@ -88,7 +87,6 @@
     justify-content: space-around;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 2%;
 }
 
 .menu_item_container {
