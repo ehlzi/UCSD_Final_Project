@@ -80,20 +80,21 @@
     display: flex;
     align-items: center;
 }
+
 .our_menu {
     background-color: aquamarine;
     width: 100%;
     display: grid;
-    justify-content: space-around;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    padding: 1%;
 }
 
 .menu_item_container {
     background-color: grey;
-    margin-top: 5%;
+    display: flex;
     width: 100%;
-    text-align: center;
 }
 
 .menu_item {
@@ -102,6 +103,12 @@
 }
 
 .menu_item_img {
-    width: 30%;
+    width: 75%;
     height: auto;
+}
+
+.menu_item_text {
+    padding-right: 15%;
+    display: flex;
+    flex-wrap: wrap;
 }
