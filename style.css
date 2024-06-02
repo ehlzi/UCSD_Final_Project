@@ -53,10 +53,13 @@
 .order-banner {
     background-color: grey;
     padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner-img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
