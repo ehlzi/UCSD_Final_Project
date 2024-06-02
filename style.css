@@ -1,11 +1,19 @@
 /* Header Section */
 .header-container {
-    background-color: ghostwhite;
+    /*background-color: ghostwhite;*/
     padding: 1%;
 }
 
-.nav-bar, .rewards-bar {
-    background-color: lightgrey;
+.nav-bar {
+    /*background-color: lightgrey;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+}
+
+.rewards-bar {
+    /*background-color: lightgrey;*/
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -13,18 +21,19 @@
 }
 
 .nav-button {
-    background-color: grey;
+    /*background-color: grey;*/
     width: 10%;
     height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
-    font-family: "Source Sans 3", sans-serif;
+    font-size: 15px;
+    color: red;
+    font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
-    margin-top: 0;
+    margin-bottom: 5px;
 }
 
 .nav-image, .rewards-image {
@@ -36,8 +45,9 @@
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 5px;
+    color: red;
 }
 
 .description {
@@ -45,14 +55,13 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 0;
 }
 
 /* Banner Section */
 .order-banner {
-    background-color: grey;
-    padding: 2%;
+    /*background-color: grey;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,12 +69,11 @@
 
 .banner-img {
     max-width: 100%;
-    height: auto;
 }
 
 /* Rewards Section */
 .rewards-container {
-    background-color: ghostwhite;
+    /*background-color: ghostwhite;*/
     padding: 1%;
 }
 
@@ -76,14 +84,14 @@
 }
 
 .learn-more-container {
-    background-color: lightgrey;
+    /*background-color: lightgrey;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .learn-more-text-container {
-    background-color: grey;
+    /*background-color: grey;*/
     margin: 1%;
     width: 100%;
     height: auto;
@@ -91,22 +99,22 @@
 }
 
 .learn-more-image {
-    background-color: grey;
+    /*background-color: grey;*/
     padding: 2%;
-    width: 100%;
-    height: auto;
+    width: 50%;
 }
 
 /* Menu Section */
 .our-menu-container {
-    background-color: ghostwhite;
+    /*background-color: ghostwhite;*/
     padding: 1%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 .our-menu {
-    background-color: lightgrey;
+    /*background-color: lightgrey;*/
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -116,13 +124,9 @@
 }
 
 .menu-item-container {
-    background-color: grey;
+    /*background-color: grey;*/
     width: auto;
-}
-
-.menu-item {
-    background-color: maroon;
-    display: grid;
+    display: flex;
 }
 
 .menu-item-img-container {
@@ -137,15 +141,28 @@
 
 .menu-item-text-container {
     display: flex;
-    padding-left: 5%;
+    padding-left: 2%;
     flex-direction: column;
+    padding-top: 5%;
 }
 
 @media only screen and (max-width: 600px) {
     /* Body */
     body {
-        min-width: 320px; /* Set a minimum width for the body */
-        margin: 0 auto; /* Center the content horizontally */
+        min-width: 320px;
+        margin: 0 auto;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
     /* Header */
@@ -176,20 +193,20 @@
     }
 
     .learn-more-text-container {
-        background-color: grey;
         margin: 1%;
-        width: 55%;
+        width: 75%;
         padding-left: 1%;
         text-align: center;
     }
 
     .learn-more-image {
-        background-color: grey;
         padding: 2%;
         width: 50%;
     }
 
     /* Menu Section */
+    .our-menu-container {
+    }
     .our-menu {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -198,7 +215,12 @@
         width: 100%;
     }
 
+    .menu-item-img-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
     .menu-item-img {
-        width: 15%;
+        width: 50%;
     }
 }
