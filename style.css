@@ -197,7 +197,6 @@
 /*Contact Us*/
 .contact-us-body {
     font-family: 'Source Sans 3', sans-serif;
-    margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -278,7 +277,7 @@ footer {
 }
 
 /* Extras Credit Stuff */
-.styling {
+.styling, .styling-norm {
     max-width: 940px;
     margin: 0 auto;
     padding: 200px 10px;
@@ -295,10 +294,10 @@ footer {
     text-align: center;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
 }
 
-.splash {
+.splash-norm {
     height: 700px;
     background-image: url("images/banner.jpg");
     -webkit-background-size: cover;
@@ -308,6 +307,22 @@ footer {
     padding-bottom: 0;
     background-attachment: fixed;
     background-position: center 0;
+}
+
+.splash {
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+}
+
+.splash video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 .about-splash, .map {
@@ -332,14 +347,21 @@ footer {
     background-position: center 0;
 }
 
-.splash .logo-img {
-    width: 50%;
+.splash-norm {
     min-width: 100px;
 }
 
-.about-splash .logo-img {
-    width: 25%;
+.about-splash {
+    width: 100%;
     min-width: 100px;
+}
+
+.logo-img {
+    width: 50%;
+}
+
+.about-logo-img {
+    width: 25%;
 }
 
 .btn-main {
