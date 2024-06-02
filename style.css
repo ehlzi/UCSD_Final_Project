@@ -12,7 +12,31 @@
 }
 
 .nav_image, .rewards_image {
-    width: 10%;
+    width: 5%;
+}
+
+.oswald-h1, h1 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.source-sans-3-p, p {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.h1 {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.p {
+    font-size: 10px;
+    margin-top: 0;
 }
 
 .nav_button {
@@ -87,10 +111,6 @@
 .menu_item_container {
     background-color: grey;
     width: auto;
-    /*
-    display: flex;
-    align-items: center;
-    */
 }
 
 .menu_item {
@@ -112,14 +132,4 @@
     display: flex;
     padding-left: 5%;
     flex-direction: column;
-}
-
-.h1 {
-    font-size: 12px;
-    margin-bottom: 5px;
-}
-
-.p {
-    font-size: 10px;
-    margin-top: 0;
 }
