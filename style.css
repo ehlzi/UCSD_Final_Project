@@ -1,9 +1,9 @@
-.header {
+.header_container {
     background-color: ghostwhite;
-    padding: 1% 1% 1% 1%;
+    padding: 1%;
 }
 
-.nav {
+.nav_bar, .rewards_bar {
     background-color: lightgrey;
     display: flex;
     justify-content: space-around;
@@ -11,19 +11,18 @@
     padding: 1%;
 }
 
-.header_image {
+.nav_image, .rewards_image {
     width: 10%;
-    text-align: center;
-//background-color: red;
 }
 
 .nav_button {
     background-color: grey;
     width: 10%;
-    height: 50px;
+    height: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 12px;
 }
 
 .order_banner {
@@ -36,7 +35,7 @@
     height: auto;
 }
 
-.rewards {
+.rewards_container {
     background-color: ghostwhite;
     padding: 1%;
 }
@@ -49,13 +48,11 @@
 .learn_more_container {
     background-color: lightgrey;
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
-    gap: 1%;
 }
 
-.learn_more_article {
+.learn_more_text_container {
     background-color: grey;
     margin: 1%;
     width: 100%;
