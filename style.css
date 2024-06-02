@@ -1,9 +1,10 @@
-.header_container {
+/* Header Section */
+.header-container {
     background-color: ghostwhite;
     padding: 1%;
 }
 
-.nav_bar, .rewards_bar {
+.nav-bar, .rewards-bar {
     background-color: lightgrey;
     display: flex;
     justify-content: space-around;
@@ -11,35 +12,7 @@
     padding: 1%;
 }
 
-.nav_image, .rewards_image {
-    width: 5%;
-}
-
-.oswald-h1, h1 {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.source-sans-3-p, p {
-    font-family: "Source Sans 3", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.h1 {
-    font-size: 12px;
-    margin-bottom: 5px;
-}
-
-.p {
-    font-size: 10px;
-    margin-top: 0;
-}
-
-.nav_button {
+.nav-button {
     background-color: grey;
     width: 10%;
     height: 25px;
@@ -47,36 +20,66 @@
     justify-content: center;
     align-items: center;
     font-size: 12px;
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0;
 }
 
-.order_banner {
+.nav-image, .rewards-image {
+    width: 5%;
+}
+
+.title {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.description {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10px;
+    margin-top: 0;
+}
+
+/* Banner Section */
+.order-banner {
     background-color: grey;
     padding: 2%;
 }
 
-.banner_img {
+.banner-img {
     width: 100%;
     height: auto;
 }
 
-.rewards_container {
+/* Rewards Section */
+.rewards-container {
     background-color: ghostwhite;
     padding: 1%;
 }
 
-.learn_more {
+/* Learn More Section */
+.learn-more {
     background-color: ghostwhite;
     padding: 1%;
 }
 
-.learn_more_container {
+.learn-more-container {
     background-color: lightgrey;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.learn_more_text_container {
+.learn-more-text-container {
     background-color: grey;
     margin: 1%;
     width: 100%;
@@ -84,21 +87,22 @@
     padding-left: 1%;
 }
 
-.learn_more_image {
+.learn-more-image {
     background-color: grey;
     padding: 2%;
     width: 100%;
     height: auto;
 }
 
-.our_menu_container {
+/* Menu Section */
+.our-menu-container {
     background-color: ghostwhite;
     padding: 1%;
     display: flex;
     align-items: center;
 }
 
-.our_menu {
+.our-menu {
     background-color: lightgrey;
     width: 100%;
     display: grid;
@@ -108,27 +112,27 @@
     padding: 1%;
 }
 
-.menu_item_container {
+.menu-item-container {
     background-color: grey;
     width: auto;
 }
 
-.menu_item {
+.menu-item {
     background-color: maroon;
     display: grid;
 }
 
-.menu_item_img_container {
+.menu-item-img-container {
     display: flex;
     width: auto;
 }
 
-.menu_item_img {
+.menu-item-img {
     width: 25%;
     height: auto;
 }
 
-.menu_item_text_container {
+.menu-item-text-container {
     display: flex;
     padding-left: 5%;
     flex-direction: column;
