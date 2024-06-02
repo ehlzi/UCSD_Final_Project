@@ -27,11 +27,10 @@
 
 <main class="contact-us-main">
 
-    <section class="contact-us">
-
+    <section class="contact-us" role="form">
         <h2 class="form-title">Contact Us</h2>
 
-        <div class="contact-us-logo">
+        <div class="contact-us-logo" role="img" aria-label="Plant Bae Logo">
             <a><img class="logo-img" style="width: 25%;" src="images/logo.png" alt="Plant Bae Logo"></a>
         </div>
 
@@ -49,52 +48,57 @@
         </p>
 
         <form action="" method="POST">
+            <fieldset>
+                <legend>Contact Information</legend>
 
-            <div class="form-group">
-                <label for="first-name">First Name*</label>
-                <input type="text" id="first-name" name="first-name" required>
-            </div>
+                <div class="form-group">
+                    <label for="first-name">First Name*</label>
+                    <input type="text" id="first-name" name="first-name" required aria-required="true">
+                </div>
 
-            <div class="form-group">
-                <label for="last-name">Last Name*</label>
-                <input type="text" id="last-name" name="last-name" required>
-            </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name*</label>
+                    <input type="text" id="last-name" name="last-name" required aria-required="true">
+                </div>
 
-            <div class="form-group">
-                <label for="email">Email*</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                </div>
 
-            <div class="form-group">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone">
-            </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]*">
+                </div>
+            </fieldset>
 
-            <div class="form-group">
-                <label for="related-location">Related Location*</label>
-                <select id="related-location" name="related-location" required>
-                    <option value="" disabled selected>Select a location</option>
-                    <option value="arts-district">Arts District</option>
-                    <option value="larchmont-village">Larchmont Village</option>
-                    <option value="venice">Venice</option>
-                    <option value="san-diego">San Diego</option>
-                </select>
-            </div>
+            <fieldset>
+                <legend>Location and Message</legend>
 
-            <div class="form-group">
-                <label for="subject">Subject*</label>
-                <input type="text" id="subject" name="subject" required>
-            </div>
+                <div class="form-group">
+                    <label for="related-location">Related Location*</label>
+                    <select id="related-location" name="related-location" required aria-required="true">
+                        <option value="" disabled selected>Select a location</option>
+                        <option value="arts-district">Arts District</option>
+                        <option value="larchmont-village">Larchmont Village</option>
+                        <option value="venice">Venice</option>
+                        <option value="san-diego">San Diego</option>
+                    </select>
+                </div>
 
-            <div class="form-group">
-                <label for="message">Message*</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
+                <div class="form-group">
+                    <label for="subject">Subject*</label>
+                    <input type="text" id="subject" name="subject" required aria-required="true">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                </div>
+            </fieldset>
 
             <button class="contact-us-button" type="submit">Submit</button>
-
         </form>
-
     </section>
 
 </main>
@@ -108,6 +112,7 @@
 
         <a href="index.html" class="nav-button" style=""><span>HOME</span></a>
         <a href="menu.html" class="nav-button" style=""><span>MENU</span></a>
+        <a href="order.html" class="nav-button"><span>ORDER</span></a>
         <a href="about.html" class="nav-button" style=""><span>ABOUT US</span></a>
         <a href="contact.html" class="nav-button" style=""><span>CONTACT</span></a>
 
