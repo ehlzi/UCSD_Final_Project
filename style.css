@@ -100,7 +100,6 @@
 
 /* Learn More Section */
 .learn-more, .meet-team, .visit-us {
-    background-color: ghostwhite;
     padding: 1%;
 }
 
@@ -118,6 +117,7 @@
     display: flex;
     align-items: center;
     padding: 5%;
+    background-color: ghostwhite;
 }
 
 .learn-more-text-container, .meet-team-text-container {
@@ -393,6 +393,17 @@ a:hover span:after {
 .form {
     width: 100%;
 }
+
+.form-submit-container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-submit {
+    text-align: center;
+    background-color: red;
+}
+
 .order-container {
     margin: auto;
     max-width: 700px;
