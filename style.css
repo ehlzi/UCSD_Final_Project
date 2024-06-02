@@ -1,11 +1,9 @@
 /* Header Section */
 .header-container {
-    /*background-color: ghostwhite;*/
     padding: 1%;
 }
 
 .nav-bar {
-    /*background-color: lightgrey;*/
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -13,7 +11,6 @@
 }
 
 .rewards-bar {
-    /*background-color: lightgrey;*/
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -21,19 +18,20 @@
 }
 
 .nav-button {
-    /*background-color: grey;*/
     width: 10%;
     height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 15px;
-    color: red;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     margin-bottom: 5px;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    float: left;
+    display: inline-block;
+    border: none;
 }
 
 .nav-image, .rewards-image {
@@ -59,9 +57,18 @@
     margin-top: 0;
 }
 
+.about-description {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    margin-top: 0;
+    color: white;
+}
+
 /* Banner Section */
 .order-banner {
-    /*background-color: grey;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,40 +80,56 @@
 
 /* Rewards Section */
 .rewards-container {
-    /*background-color: ghostwhite;*/
     padding: 1%;
 }
 
 /* Learn More Section */
-.learn-more {
+.learn-more, .meet-team, .visit-us {
     background-color: ghostwhite;
     padding: 1%;
 }
 
-.learn-more-container {
-    /*background-color: lightgrey;*/
+.bio {
+    padding: 1%;
+}
+
+.learn-more-container, .meet-team-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.learn-more-text-container {
-    /*background-color: grey;*/
+.visit-us-container {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+}
+
+.learn-more-text-container, .meet-team-text-container {
     margin: 1%;
     width: 100%;
     height: auto;
     padding-left: 1%;
 }
 
-.learn-more-image {
-    /*background-color: grey;*/
+.visit-us-text-container {
+    margin: 1%;
+    width: 100%;
+    height: auto;
+    padding: 5%;
+}
+
+.learn-more-image, .meet-team-image {
     padding: 2%;
+    width: 50%;
+}
+
+.visit-us-image {
     width: 50%;
 }
 
 /* Menu Section */
 .our-menu-container {
-    /*background-color: ghostwhite;*/
     padding: 1%;
     display: flex;
     flex-wrap: wrap;
@@ -114,7 +137,6 @@
 }
 
 .our-menu {
-    /*background-color: lightgrey;*/
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -124,7 +146,6 @@
 }
 
 .menu-item-container {
-    /*background-color: grey;*/
     width: auto;
     display: flex;
 }
@@ -223,20 +244,116 @@
     .menu-item-img {
         width: 50%;
     }
+
+    .btn-main {
+    }
 }
 
+/*Contact Us*/
+.contact-us-body {
+    font-family: 'Source Sans 3', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.contact-us-logo {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact-us-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    max-width: 600px;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.form-description {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+.contact-us-button {
+    width: 100%;
+    padding: 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-us-button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Extras Credit Stuff */
 .styling {
     max-width: 940px;
     margin: 0 auto;
-    padding: 100px 10px;
+    padding: 200px 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
     width: 25%;
 }
 
+.about-styling {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 100px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
 .splash {
-    height: 400px;
+    height: 700px;
     background-image: url("images/banner.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -245,6 +362,38 @@
     padding-bottom: 0;
     background-attachment: fixed;
     background-position: center 0;
+}
+
+.about-splash, .map {
+    height: 500px;
+    background-image: url("images/team/cafe.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+
+.about-map {
+    height: 500px;
+    background-image: url("images/team/map.JPG");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+
+.splash .logo-img {
+    width: 50%;
+    min-width: 100px;
+}
+
+.about-splash .logo-img {
+    width: 25%;
+    min-width: 100px;
 }
 
 .btn-main {
@@ -259,9 +408,36 @@
     text-transform: uppercase;
     transition: 0.2s;
     border-radius: 50px;
+    min-width: 50px;
 }
 
 .btn-main:hover {
-    opacity: 0;
+    opacity: 40%;
     border-radius: 50px;
+}
+
+a span {
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s;
+    position: relative;
+}
+
+a span:after {
+    content: "\00b7";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+a:hover span {
+    padding-right: 1em;
+    color: red;
+}
+
+a:hover span:after {
+    opacity: 1;
+    right: 0;
 }
