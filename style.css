@@ -224,3 +224,44 @@
         width: 50%;
     }
 }
+
+.styling {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 100px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.splash {
+    height: 400px;
+    background-image: url("images/banner.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 0;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+
+.btn-main {
+    background-color: red;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 16px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.2s;
+    border-radius: 50px;
+}
+
+.btn-main:hover {
+    opacity: 0;
+    border-radius: 50px;
+}
